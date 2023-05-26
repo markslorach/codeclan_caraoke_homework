@@ -25,4 +25,3 @@ class TestRoom(unittest.TestCase):
     def test_add_a_song(self):
         self.room.add_song(self.song)
         self.assertEqual([self.song], self.room.songs)
-gi
