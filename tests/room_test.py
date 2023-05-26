@@ -16,7 +16,7 @@ class TestRoom(unittest.TestCase):
     
     def test_check_in_guest(self):
         self.room.check_in_guest(self.guest)
-        self.assertEqual(self.room.guests, [self.guest])
+        self.assertEqual([self.guest], self.room.guests)
 
     def test_check_out_guest(self):
         self.room.check_out_guest(self.guest)
@@ -24,4 +24,5 @@ class TestRoom(unittest.TestCase):
 
     def test_add_a_song(self):
         self.room.add_song(self.song)
-        self.assertEqual(self.room.songs, [self.song])
+        self.assertEqual([self.song], self.room.songs)
+gi
