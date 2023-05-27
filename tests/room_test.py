@@ -6,13 +6,14 @@ from classes.guest import Guest
 
 class TestRoom(unittest.TestCase):
     def setUp(self):
-        self.room = Room("1")
-        self.guest = Guest("Ellen Shand")
+
+        self.room = Room(1, 10, 5)
+        self.guest = Guest("Paddington Bear")
         self.song = Song("Tina Turner", "Proud Mary")
 
 
     def test_check_room_number(self):
-        self.assertEqual("1", self.room.room_number)
+        self.assertEqual(1, self.room.room_number)
     
     def test_check_in_guest(self):
         self.room.check_in_guest(self.guest)
@@ -25,3 +26,4 @@ class TestRoom(unittest.TestCase):
     def test_add_a_song(self):
         self.room.add_song(self.song)
         self.assertEqual([self.song], self.room.songs)
+
