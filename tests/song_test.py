@@ -14,12 +14,10 @@ class TestSong(unittest.TestCase):
         ]
 
     def test_song_has_artist(self):
-        song = self.songs[2]
-        self.assertEqual("Caribou", song.artist)
+        self.assertEqual("Caribou", self.songs[2].artist)
 
     def test_song_has_title(self):
-        song = self.songs[2]
-        self.assertEqual("Our Love", song.title)
+        self.assertEqual("Our Love", self.songs[2].title)
 
       
      
