@@ -7,7 +7,7 @@ from classes.guest import Guest
 class TestGuest(unittest.TestCase):
     def setUp(self):
 
-        self.guests = [Guest("Mark Slorach"), Guest("Ellen Shand")]
+        self.guests = [Guest("Mark Slorach", 30), Guest("Ellen Shand", 50)]
 
     def test_guest_has_name(self):
         guest = self.guests[1]
