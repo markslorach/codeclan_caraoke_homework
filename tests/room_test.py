@@ -8,7 +8,7 @@ class TestRoom(unittest.TestCase):
     def setUp(self):
 
         self.room = Room(1, 10, 15)
-        self.guest = Guest("Paddington Bear", 50.00)
+        self.guest = Guest("Paddington Bear", 50.00, "Defender")
         self.song = Song("Tina Turner", "Proud Mary")
 
 
@@ -35,4 +35,7 @@ class TestRoom(unittest.TestCase):
     def test_add_a_song(self):
         self.room.add_song(self.song)
         self.assertEqual([self.song], self.room.songs)
+
+    def test_guests_fav_song_is_on_playlist(self):
+        pass
 
