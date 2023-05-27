@@ -23,6 +23,10 @@ class Room:
     def add_song(self, song):
         self.songs.append(song)
     
+    # def cheer_if_favorite_song(self, guest):
+    #     for song in self.songs:
+    #         if song == guest.fav_song:
+    #             return "Whoo!"
 
 
     

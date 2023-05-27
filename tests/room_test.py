@@ -36,6 +36,8 @@ class TestRoom(unittest.TestCase):
         self.room.add_song(self.song)
         self.assertEqual([self.song], self.room.songs)
 
-    def test_guests_fav_song_is_on_playlist(self):
+    def test_cheer_if_fav_song(self):
         pass
+
+   
 
