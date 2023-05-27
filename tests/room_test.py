@@ -14,6 +14,12 @@ class TestRoom(unittest.TestCase):
 
     def test_check_room_number(self):
         self.assertEqual(1, self.room.room_number)
+
+    def test_check_room_capacity(self):
+        self.assertEqual(10, self.room.room_capacity)
+
+    def test_check_entry_fee(self):
+        self.assertEqual(5, self.room.entry_fee)
     
     def test_check_in_guest(self):
         self.room.check_in_guest(self.guest)
