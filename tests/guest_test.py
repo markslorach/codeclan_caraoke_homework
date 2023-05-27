@@ -12,4 +12,8 @@ class TestGuest(unittest.TestCase):
     def test_guest_has_name(self):
         self.assertEqual("Ellen Shand", self.guests[1].guest_name)
 
+    def test_guest_has_money(self):
+        self.assertEqual(80, self.guests[0].guest_money)
+        
+
     

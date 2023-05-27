@@ -6,6 +6,13 @@ class Room:
         self.room_capacity = room_capacity
         self.entry_fee = entry_fee
 
+    
+     # when checking in a guest
+    # if the amount of guests (len) is less than or equal to the room capacity (True)
+    # if a guests money is equal to or above the entry fee (True)
+    # append guest to the guest list
+    # take away the entry fee from guests money
+    
     def check_in_guest(self, guest):
         self.guests.append(guest)
 
@@ -21,3 +28,5 @@ class Room:
     # if a guests money is equal to or above the entry fee (True)
     # append guest to the guest list
     # take away the entry fee from guests money
+
+    
