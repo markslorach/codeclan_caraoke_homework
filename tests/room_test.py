@@ -11,6 +11,13 @@ class TestRoom(unittest.TestCase):
         self.guest = Guest("Paddington Bear", 50.00, "Defender")
         self.song = Song("Tina Turner", "Proud Mary")
 
+        self.playlist = [
+            Song("Placebo", "The Bitter End"),
+            Song("Bonobo", "Defender"),
+            Song("Caribou", "Our Love"),
+            Song("Goldie", "Inner City Life"),
+            Song("Tina Turner", "Proud Mary")
+        ]
 
     def test_check_room_number(self):
         self.assertEqual(1, self.room.room_number)
@@ -36,8 +43,11 @@ class TestRoom(unittest.TestCase):
         self.room.add_song(self.song)
         self.assertEqual([self.song], self.room.songs)
 
-    def test_cheer_if_fav_song(self):
-        pass
+    
+    # def test_cheer_if_fav_song(self): 
+    #     self.assertEqual(True, self.guest.fav_song == self.playlist[1].title)
+    
+    
 
    
 

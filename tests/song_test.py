@@ -10,7 +10,8 @@ class TestSong(unittest.TestCase):
         self.songs = [
             Song("Placebo", "The Bitter End"),
             Song("Bonobo", "Defender"),
-            Song("Caribou", "Our Love")
+            Song("Caribou", "Our Love"),
+            Song("Goldie", "Inner City Life")
         ]
 
     def test_song_has_artist(self):
@@ -20,6 +21,3 @@ class TestSong(unittest.TestCase):
         self.assertEqual("Our Love", self.songs[2].title)
 
     
-
-
-     

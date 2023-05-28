@@ -19,4 +19,4 @@ class TestGuest(unittest.TestCase):
         self.assertEqual("The Bitter End", self.guests[0].fav_song)
         
 
-    
+
